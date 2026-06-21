@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Career AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Global Career AI</h1>
+            <p>আপনার স্বপ্নের দেশের জন্য নিখুঁত সিভি ও কভার লেটার</p>
+        </header>
+
+        <main>
+            <form id="cvForm" class="cv-form">
+                <div class="form-group">
+                    <label for="fullName">আপনার পুরো নাম</label>
+                    <input type="text" id="fullName" required placeholder="যেমন: Mahfuzul Haque Rasel">
+                </div>
+                <div class="form-group">
+                    <label for="profession">কাঙ্ক্ষিত পেশা</label>
+                    <input type="text" id="profession" required placeholder="যেমন: Software Engineer">
+                </div>
+                <div class="form-group">
+                    <label for="country">যে দেশে কাজ করতে চান</label>
+                    <input type="text" id="country" required placeholder="যেমন: Bangladesh, Germany">
+                </div>
+                <div class="form-group">
+                    <label for="experience">কাজের অভিজ্ঞতা ও দক্ষতা</label>
+                    <textarea id="experience" rows="4" required placeholder="আপনার দক্ষতাগুলো এখানে লিখুন..."></textarea>
+                </div>
+                <button type="submit" id="generateBtn" class="primary-btn">
+                    <span id="btnText">Generate Pro CV & Cover Letter</span>
+                    <span id="btnLoader" class="loader hidden"></span>
+                </button>
+            </form>
+
+            <!-- নতুন ডেমো এবং অ্যাড সেকশন -->
+            <div id="demoArea" class="result-box hidden">
+                <h3>✅ আপনার সিভি ১০০% প্রস্তুত!</h3>
+                <p id="demoText" class="demo-text"></p>
+                <div class="blur-cv-preview">
+                    <span>Preview Locked</span>
+                </div>
+                <button id="watchAdBtn" class="primary-btn ad-btn">🎥 Watch Ad to Download PDF</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
